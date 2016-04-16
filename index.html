@@ -4,23 +4,65 @@
         <title> working with tables </title>
     </head>
     <body>
-        <table>
+        <form method="GET" action="message">
+            <lable for="name">Name:</lable>
+            <input id="name" type="text">
+            <input type="submit">
+        </form>
+        <table  border="1">
             <tr>
-                <td>1</td>
+                <td>Column1</td>
+                <td>Column2</td>
+                <td>Column3</td>
+            </tr>
+            <tr>
+                <td colspan="2">1</td>
                 <td>2</td>
-                <td>3</td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>5</td>
-                <td>6</td>
+                <td rowspan="2">6</td>
             </tr>
             <tr>
                 <td>7</td>
                 <td>8</td>
-                <td>9</td>
             </tr>
         </table>
-
+        <table  border="2">
+             <tr>
+                <th rowspan="2">Summary</td>
+                <th>Quarter I</td>
+                <th>Quarter I</td>
+            </tr>
+            <tr>
+                <th>Results</td>
+                <th>Results</td>
+            </tr>
+            <tr>
+                <td>Jenuary</td>
+                <td>10</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Fabruary</td>
+                <td>30</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td colspan="2">100</td>
+            </tr>
+        <ol type="I" reversed>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+        </ol>
+        <ul type="I">
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+        </ul>
+        </table>
     </body>
 </html>
